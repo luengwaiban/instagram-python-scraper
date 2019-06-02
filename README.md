@@ -8,4 +8,4 @@ pip3 install -r require.txt
 ```
 
 More documentation will be completed soon~.   
-Stars can hurry me up on this！ 
+Stars can hurry me up on this！✨
