@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from instagram import InstagramScraper
+from instagram_scraper.instagram import InstagramScraper
 
 proxies = {
     'http': 'http://127.0.0.1:1087',
@@ -12,9 +12,9 @@ instagram.set_proxies(proxies)
 
 # example:
 #
-# account = instagram.get_account('shaq')
-# account_id = account.get_id()
-# print(account._id)
+account = instagram.get_account('shaq')
+account_id = account.get_id()
+print(account._id)
 #
 #
 # account_by_id = instagram.get_account_by_id('11859524403')

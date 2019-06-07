@@ -4,9 +4,8 @@ import re
 import json
 import hashlib
 import model
-import endpoints
+from instagram_scraper import endpoints, helper
 import exception
-import helper
 import random
 import time
 import cache
@@ -46,7 +45,7 @@ class InstagramScraper(object):
     def get_user_agent(self):
         return self.__user_agent
 
-    def set_user_agent(self,user_agent):
+    def set_user_agent(self, user_agent):
         self.__user_agent = user_agent
 
     def generate_header(self, user_session=None, gis_token=''):
@@ -125,7 +124,7 @@ class InstagramScraper(object):
         csrf_token = session['csrftoken']
         header = {
             'cookie': "ig_cb=1; csrftoken="+csrf_token+"; sessionid="+session_id+";",
-            'referer': endpoints.BASE_URL+'/',
+            'referer': endpoints.BASE_URL + '/',
             'x-csrftoken': csrf_token,
             'x-CSRFToken': csrf_token,
             'user-agent': self.get_user_agent()

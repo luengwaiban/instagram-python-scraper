@@ -3,7 +3,7 @@
 from model.base_model import BaseModel
 import model
 from urllib.parse import urlparse
-import endpoints
+from instagram_scraper import endpoints
 
 
 class Media(BaseModel):
