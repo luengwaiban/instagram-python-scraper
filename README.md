@@ -74,3 +74,6 @@ print(account._id)
 See [more usages](https://github.com/luengwaiban/instagram-python-scraper/blob/master/more_usages.md)  
 
 Any star or help would be appreciated if it is helpful for you ~  🙋‍♂️🌚
+
+## other
+php library:https://github.com/postaddictme/instagram-php-scraper
