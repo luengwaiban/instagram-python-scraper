@@ -531,7 +531,6 @@ class InstagramScraper(object):
             'count': 0,
             'has_next_page': has_next_page
         }
-        print(endpoints.get_medias_json_by_tag_link(tag, max_id))
         response = self.__req.get(endpoints.get_medias_json_by_tag_link(tag, max_id))
         if response.status_code != self.HTTP_OK:
             error_msg = 'Response code is: ' + str(response.status_code) + '. Body: ' + response.text + ' Something went wrong. Please report issue.'
@@ -575,7 +574,6 @@ class InstagramScraper(object):
         :param tag:
         :return:
         """
-        print(endpoints.get_medias_json_by_tag_link(tag))
         response = self.__req.get(endpoints.get_medias_json_by_tag_link(tag))
         if response.status_code == self.HTTP_NOT_FOUND:
             raise exception.InstagramNotFoundError('Account with given username does not exist.')
@@ -781,7 +779,6 @@ class InstagramScraper(object):
         :param count:
         :return:
         """
-        print(endpoints.get_account_json_link(username))
         medias = []
         index = 0
         response = self.__req.get(endpoints.get_account_json_link(username), headers=self.generate_header(self.__user_session))
@@ -825,7 +822,6 @@ class InstagramScraper(object):
                 raise exception.InstagramError(error_msg, response.status_code)
 
             json_body = json.loads(response.text)
-            print(json_body)
             edges = helper.get_from_dict(json_body, ['data', 'user', 'feed_reels_tray', 'edge_reels_tray_to_reel', 'edges'])
 
             if not edges:
@@ -836,9 +832,7 @@ class InstagramScraper(object):
         else:
             variables['reel_ids'] = reel_ids
 
-        print(variables)
         variables = json.dumps(variables, separators=(',', ':'))
-        print(endpoints.get_stories_link(variables))
         response = self.__req.get(endpoints.get_stories_link(variables), headers=self.generate_header(self.__user_session))
         if response.status_code != self.HTTP_OK:
             error_msg = 'Response code is: ' + str(response.status_code) + '. Body: ' + response.content + ' Something went wrong. Please report issue.'
@@ -849,7 +843,6 @@ class InstagramScraper(object):
         if not reel_medias:
             return []
 
-        print(reel_medias)
         stories = []
         for reel_media in reel_medias:
             user_stories = model.UserStories.create({})
@@ -992,7 +985,6 @@ class InstagramScraper(object):
         :param facebook_location_id:
         :return:
         """
-        print(endpoints.get_medias_json_by_location_id_link(facebook_location_id))
         response = self.__req.get(endpoints.get_medias_json_by_location_id_link(facebook_location_id), headers=self.generate_header(self.__user_session))
         if response.status_code == self.HTTP_NOT_FOUND:
             raise exception.InstagramNotFoundError('Account with given username does not exist.')

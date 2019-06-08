@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='instagram-python-scraper',
-    version='0.1',
+    version='1.0',
     description=(
         'A instagram scraper wrote in python. Various actions supported.Enjoy it!'
     ),

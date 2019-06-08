@@ -7,7 +7,7 @@ import model
 class Account(BaseModel):
 
     def __init__(self, prop=None):
-        self._id = ''
+        self.account_uesrname_id = ''
         self._username = ''
         self._full_name = ''
         self._profile_pic_url = ''

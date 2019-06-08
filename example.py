@@ -12,9 +12,9 @@ instagram.set_proxies(proxies)
 
 # example:
 #
-account = instagram.get_account('shaq')
-account_id = account.get_id()
-print(account._id)
+# account = instagram.get_account('shaq')
+# account_id = account.get_id()
+# print(account._id)
 #
 #
 # account_by_id = instagram.get_account_by_id('11859524403')
@@ -40,8 +40,8 @@ print(account._id)
 # res = instagram.login()
 # following = instagram.get_following('206034174')
 # followers = instagram.get_followers('206034174')
-# print(len(following))
-# print(len(followers))
+# print(following[0])
+# print(followers[0])
 
 # instagram.with_credentials('407261380@qq.com', 'shine-lam123456')  verify needed account
 
