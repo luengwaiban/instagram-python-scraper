@@ -17,6 +17,6 @@ class Story(Media):
         super(Story, self).__init__(props)
 
     def _init_properties_custom(self, value, prop, dictionary=None):
-        if self.__skip_prop:
+        if prop in self.__skip_prop.keys() and self.__skip_prop[prop]:
             return False
         super(Story, self)._init_properties_custom(value, prop, dictionary)
