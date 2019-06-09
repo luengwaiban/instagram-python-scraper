@@ -1,6 +1,6 @@
 # instagram-python-scraper
 A instagram scraper wrote in python.Get medias, account, videos, comments without authentication.Comment and like action also supported.  
-Similar to instagram-php-scraper. Enjoy it! ☺️
+Similar to instagram-php-scraper. Enjoy it! ☺️  
 Any star or help would be appreciated if it is helpful for you ~ 🙋‍♂️🌚
 
 ## install
