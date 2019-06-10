@@ -11,7 +11,7 @@ pip install instagram-python-scraper
 Or you can also download it directly and install the libs that recorded in require.txt first.  
 Run the command below:
 ```
-pip install -r require.txt
+pip install -r requirements.txt
 ```
 
 ## usages
