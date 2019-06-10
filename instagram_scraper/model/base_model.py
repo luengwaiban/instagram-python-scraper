@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from model.initializer_model import InitializerModel
+from instagram_scraper.model.initializer_model import InitializerModel
 
 
 class BaseModel(InitializerModel):

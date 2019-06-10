@@ -4,7 +4,7 @@ import os
 import pickle
 import time
 import re
-from cache.cache import Cache
+from instagram_scraper.cache.cache import Cache
 
 
 class DiskCache(Cache):

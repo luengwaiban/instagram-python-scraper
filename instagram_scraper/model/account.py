@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
-from model.base_model import BaseModel
-import model
+from instagram_scraper.model.base_model import BaseModel
+from instagram_scraper import model
 
 
 class Account(BaseModel):

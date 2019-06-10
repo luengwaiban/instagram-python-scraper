@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from model.base_model import BaseModel
+from instagram_scraper.model.base_model import BaseModel
 
 
 class Tag(BaseModel):

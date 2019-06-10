@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from model.media import Media
+from instagram_scraper.model import Media
 
 
 class Story(Media):

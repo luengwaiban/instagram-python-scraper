@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from two_step_verification.two_step_verification import TwoStepVerification
+from instagram_scraper.two_step_verification.two_step_verification import TwoStepVerification
 
 
 class ConsoleVerification(TwoStepVerification):

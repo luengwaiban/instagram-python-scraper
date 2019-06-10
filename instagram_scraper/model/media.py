@@ -1,9 +1,8 @@
 # -*- coding:utf-8 -*-
 
-from model.base_model import BaseModel
-import model
+from instagram_scraper.model.base_model import BaseModel
 from urllib.parse import urlparse
-from instagram_scraper import endpoints
+from instagram_scraper import endpoints, model
 
 
 class Media(BaseModel):

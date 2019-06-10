@@ -3,13 +3,9 @@ import requests
 import re
 import json
 import hashlib
-import model
-from instagram_scraper import endpoints, helper
-import exception
+from instagram_scraper import endpoints, helper, model, two_step_verification, exception, cache
 import random
 import time
-import cache
-import two_step_verification
 
 
 class InstagramScraper(object):

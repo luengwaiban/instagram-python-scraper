@@ -1,8 +1,7 @@
 # -*- coding:utf-8 -*-
 
 from abc import ABCMeta, abstractmethod
-import cache
-import exception
+from instagram_scraper import exception, cache
 
 
 class Cache(object):

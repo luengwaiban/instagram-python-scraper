@@ -1,8 +1,6 @@
 # -*- coding:utf-8 -*-
 
 from abc import ABCMeta, abstractmethod
-import cache
-import exception
 
 
 class TwoStepVerification(object):
