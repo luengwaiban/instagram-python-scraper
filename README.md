@@ -1,5 +1,5 @@
 # instagram-python-scraper
-# this repo is now merging with `realsirjoe/instagram-scraper`, get latest version at 👉 [instagram-scraper] 👈(https://github.com/realsirjoe/instagram-scraper)
+# this repo is now merging with `realsirjoe/instagram-scraper`, get latest version at 👉 [instagram-scraper](https://github.com/realsirjoe/instagram-scraper) 👈
 A instagram scraper wrote in python.Get medias, account, videos, comments without authentication.Comment and like action also supported.  
 Similar to instagram-php-scraper. Enjoy it! ☺️  
 **Any star or contribution would be appreciated if it is helpful for you ~** 🙋‍♂️🌚
